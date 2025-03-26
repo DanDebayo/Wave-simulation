@@ -1,33 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\",
+  "WorkspaceRootPath": "C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\skybox\\left.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "AbsoluteMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\glad.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|solutionrelative:glad.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\skybox\\left.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
       "RelativeMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|solutionrelative:skybox\\left.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\grid.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\grid.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|solutionrelative:grid.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\grid.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\grid.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|solutionrelative:grid.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\safe||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\safe||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|solutionrelative:safe||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\skybox.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\skybox.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|solutionrelative:skybox.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\skybox.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\skybox.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{0BE188C8-4175-4157-9B03-7894DB0C812E}|Window.vcxproj|solutionrelative:skybox.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
@@ -38,26 +42,39 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "glad.c",
+              "DocumentMoniker": "C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\glad.c",
+              "RelativeDocumentMoniker": "glad.c",
+              "ToolTip": "C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\glad.c",
+              "RelativeToolTip": "glad.c",
+              "ViewState": "AQIAAFIEAAAAAAAAAAAQwHYEAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-03-26T18:12:08.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "left.jpg",
-              "DocumentMoniker": "C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\skybox\\left.jpg",
+              "DocumentMoniker": "C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\skybox\\left.jpg",
               "RelativeDocumentMoniker": "skybox\\left.jpg",
-              "ToolTip": "C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\skybox\\left.jpg",
+              "ToolTip": "C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\skybox\\left.jpg",
               "RelativeToolTip": "skybox\\left.jpg",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
               "WhenOpened": "2025-02-28T02:16:46.956Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "skybox.vert",
-              "DocumentMoniker": "C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\skybox.vert",
+              "DocumentMoniker": "C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\skybox.vert",
               "RelativeDocumentMoniker": "skybox.vert",
-              "ToolTip": "C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\skybox.vert",
+              "ToolTip": "C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\skybox.vert",
               "RelativeToolTip": "skybox.vert",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
@@ -65,11 +82,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "skybox.frag",
-              "DocumentMoniker": "C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\skybox.frag",
+              "DocumentMoniker": "C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\skybox.frag",
               "RelativeDocumentMoniker": "skybox.frag",
-              "ToolTip": "C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\skybox.frag",
+              "ToolTip": "C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\skybox.frag",
               "RelativeToolTip": "skybox.frag",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
@@ -77,11 +94,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "grid.frag",
-              "DocumentMoniker": "C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\grid.frag",
+              "DocumentMoniker": "C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\grid.frag",
               "RelativeDocumentMoniker": "grid.frag",
-              "ToolTip": "C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\grid.frag",
+              "ToolTip": "C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\grid.frag",
               "RelativeToolTip": "grid.frag",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
@@ -91,22 +108,22 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\main.cpp",
+              "ToolTip": "C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAATAAAA",
+              "ViewState": "AQIAAIYBAAAAAAAAAAAAAJUBAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-11T03:51:50.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "grid.vert",
-              "DocumentMoniker": "C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\grid.vert",
+              "DocumentMoniker": "C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\grid.vert",
               "RelativeDocumentMoniker": "grid.vert",
-              "ToolTip": "C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\grid.vert",
+              "ToolTip": "C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\grid.vert",
               "RelativeToolTip": "grid.vert",
               "ViewState": "AQIAAAwAAAAAAAAAAAAgwBYAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
@@ -114,11 +131,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "safe",
-              "DocumentMoniker": "C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\safe",
+              "DocumentMoniker": "C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\safe",
               "RelativeDocumentMoniker": "safe",
-              "ToolTip": "C:\\Users\\Dassult\\Documents\\Opengl\\Wave simulation\\safe",
+              "ToolTip": "C:\\Users\\Dassult\\Documents\\Wave-simulation\\Wave simulation\\safe",
               "RelativeToolTip": "safe",
               "ViewState": "AQIAAFoAAAAAAAAAAAAgwDEAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
