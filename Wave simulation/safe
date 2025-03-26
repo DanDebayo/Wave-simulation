@@ -1,0 +1,193 @@
+ float vertices[] = {
+        // positions          // normals           // texture coords
+		//back face
+		-0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.6f,  1.0f,// down left
+		 0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.34f, 1.0f,// down right
+		 0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.34f,  0.0f,// up right
+		 0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.34f,  0.0f,// up right
+		-0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.6f,  0.0f,// up left
+		-0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.6f, 1.0f,// down left
+		//front face
+        -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  0.6f,  1.0f,
+         0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  0.34f, 1.0f,
+         0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  0.34f,  0.0f,
+         0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  0.34f,  0.0f,
+        -0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  0.6f,  0.0f,
+        -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  0.6f, 1.0f,
+		//left face
+        -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  0.34f,  0.0f,
+        -0.5f,  0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  0.6f, 0.0f,
+        -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  0.6f,  1.0f,
+        -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  0.6f,  1.0f,
+        -0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  0.34f,  1.0f,
+        -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  0.34f, 0.0f,
+		//right face
+         0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  0.34f,  0.0f,
+         0.5f,  0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  0.6f, 0.0f,
+         0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  0.6f,  1.0f,
+         0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  0.6f,  1.0f,
+         0.5f, -0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  0.34f,  1.0f,
+         0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  0.34f, 0.0f,
+		 //bottom face
+        -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  0.3f,  1.0f,
+         0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  0.0f, 1.0f,
+         0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  0.0f,  0.0f,
+         0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  0.0f,  0.0f,
+        -0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  0.3f,  0.0f,
+        -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  0.3f, 1.0f,
+		//top face
+        -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  1.0f,  1.0f,
+         0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.78f,  1.0f,
+         0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  0.78f,  0.0f,
+         0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  0.78f,  0.0f,
+        -0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  1.0f,  0.0f,
+        -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  1.0f,  1.0f
+    };
+
+
+
+
+    Fragment shader for water
+
+      #version 330 core
+
+// Inputs from the vertex shader
+in vec3 FragPos;  
+in vec3 Normal;
+
+// Light and material properties
+#define MAX_LIGHTS 7
+uniform vec3 lightPos[MAX_LIGHTS];   // Array of light positions
+uniform vec3 lightColor[MAX_LIGHTS]; // Array of light colors
+uniform int numLights;              // Number of active lights
+uniform vec3 viewPos;               // Camera position
+uniform vec3 objectColor;
+
+// Reflection and refraction
+uniform samplerCube skybox;         // Environment map for reflections
+uniform float reflectivity;         // Reflection strength (0 = none, 1 = full mirror)
+uniform float refractivity;         // Refraction strength
+uniform float refractiveIndex;      // Index of refraction (e.g., 1.33 for water)
+
+out vec4 FragColor;
+
+void main()
+{
+    // Normalize the normal vector
+    vec3 norm = normalize(Normal);
+
+    // View direction
+    vec3 viewDir = normalize(viewPos - FragPos);
+
+    // Accumulate light contributions
+    vec3 ambient = vec3(0.3);
+    vec3 diffuse = vec3(0.0);
+    vec3 specular = vec3(0.0);
+
+    for (int i = 0; i < numLights; i++) {
+        // Ambient lighting
+        float ambientStrength = 0.5;
+        ambient += ambientStrength * lightColor[i];
+
+        // Diffuse lighting
+        vec3 lightDir = normalize(lightPos[i] - FragPos);
+        float diff = max(dot(norm, lightDir), 0.0);
+        diffuse += diff * lightColor[i];
+
+        // Specular lighting
+        float specularStrength = 0.8;
+        vec3 reflectDir = reflect(-lightDir, norm);
+        float spec = pow(max(dot(viewDir, reflectDir), 0.0), 22.0); // Shininess hardcoded as 32
+        specular += specularStrength * spec * lightColor[i];
+    }
+
+    // Combine lighting results
+    vec3 lighting = (ambient + diffuse + specular) * objectColor;
+
+    // Reflection vector
+    vec3 reflection = reflect(-viewDir, norm);
+    vec3 reflectionColor = texture(skybox, reflection).rgb;
+
+    // Refraction vector
+    vec3 refraction = refract(-viewDir, norm, 1.0 / refractiveIndex);
+    vec3 refractionColor = texture(skybox, refraction).rgb;
+
+    // Combine reflection, refraction, and lighting
+    vec3 result = mix(lighting, reflectionColor, reflectivity); // Add reflection
+    result = mix(result, refractionColor, refractivity);        // Add refraction
+
+    // Final color output
+    FragColor = vec4(result, 1.0);
+}
+
+
+
+
+
+
+         calculated waves in vertex shader
+
+
+#version 330 core
+
+layout(location = 0) in vec3 aPos; 
+
+uniform mat4 model;                   
+uniform mat4 view;                    
+uniform mat4 projection;     
+
+uniform vec3 translation;
+uniform float time;                   
+uniform float wavelength;              
+uniform float amplitude;              
+uniform float speed;
+
+out vec3 FragPos;  // Pass the position to the fragment shader
+out vec3 Normal;   // Pass the normal to the fragment shader
+
+// Function to compute height based on sum of exponentials of sines
+float getHeight(float x, float z) {
+    float frequency = 2.0 / wavelength;
+
+    // Use exp() to create sharper peaks with Euler's number
+     float waveHeightX = (exp(sin((x + z)  * frequency + time * speed)) * amplitude) +
+                        (exp(sin((x + -z) * frequency * 0.2 + time * speed * 0.5)) * amplitude * 0.3) +
+                        (exp(sin(-x  * frequency * 0.4 + time * speed * 1.0)) * amplitude * 0.5) +
+                        (exp(sin(-x * frequency * 0.6 + time * speed * 0.8)) * amplitude * 1.0);
+
+    float waveHeightZ = (exp(sin((z + x) * frequency / 2.5 + time * speed * 1.2)) * amplitude * 1.2)+
+                        (exp(sin((z + -x) * frequency * 0.2 + time * speed * 0.5)) * amplitude * 0.4) +
+                        (exp(sin((-z + x )* frequency * 0.5 + time * speed * 2.0)) * amplitude * 1.1) +
+                        (exp(sin(-z * frequency * 0.6 + time * speed * 1.5)) * amplitude * 0.3);
+
+    return waveHeightX + waveHeightZ;
+}
+
+void main()
+{
+    float delta = 0.01; // Small offset for numerical derivative
+
+    vec3 translatedPos = aPos + translation; // Use a different name to avoid shadowing
+
+    // Original position
+    float height = getHeight(translatedPos.x, translatedPos.z);
+    vec3 currentPos = vec3(translatedPos.x, height, translatedPos.z);
+
+    // Sample positions slightly offset in the x and z directions for numerical normal approximation
+    float heightX = getHeight(translatedPos.x + delta, translatedPos.z);  // Height at a small x-offset
+    float heightZ = getHeight(translatedPos.x, translatedPos.z + delta);  // Height at a small z-offset
+
+    // Calculate tangents along x and z directions
+    vec3 tangentX = normalize(vec3(delta, heightX - height, 0.0));
+    vec3 tangentZ = normalize(vec3(0.0, heightZ - height, delta));
+
+    // Compute normal as the cross product of tangents
+    Normal = normalize(cross(tangentZ, tangentX));
+
+    // Pass the modified position and normal to the fragment shader
+    FragPos = currentPos;
+    gl_Position = projection * view * model * vec4(currentPos, 1.0);
+}
+
+
+

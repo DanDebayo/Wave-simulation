@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Shaders">
+      <UniqueIdentifier>{4e992e0e-e50a-49c8-bc12-4ed196d1cc75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Textures">
+      <UniqueIdentifier>{3a413764-bd16-4de7-8bb8-c338318f7d51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Textures\skybox">
+      <UniqueIdentifier>{45449c9c-998a-4fbc-86c2-067748488cc9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\glad\src\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="safe" />
+    <None Include="grid.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="grid.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="light.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="light.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="skybox.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="skybox.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="skybox\top.jpg">
+      <Filter>Resource Files\Textures\skybox</Filter>
+    </Image>
+    <Image Include="skybox\back.jpg">
+      <Filter>Resource Files\Textures\skybox</Filter>
+    </Image>
+    <Image Include="skybox\bottom.jpg">
+      <Filter>Resource Files\Textures\skybox</Filter>
+    </Image>
+    <Image Include="skybox\front.jpg">
+      <Filter>Resource Files\Textures\skybox</Filter>
+    </Image>
+    <Image Include="skybox\left.jpg">
+      <Filter>Resource Files\Textures\skybox</Filter>
+    </Image>
+    <Image Include="skybox\right.jpg">
+      <Filter>Resource Files\Textures\skybox</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="shader_m.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="skybox\references.txt">
+      <Filter>Resource Files\Textures\skybox</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
