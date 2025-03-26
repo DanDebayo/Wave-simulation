@@ -27,7 +27,7 @@ cd Wave-Simulation
 ```
 
 ### Building the Project
-Compile the project using CMake or manually with `g++`.
+Compile the project using visula studios or manually with `g++`.
 
 ### Running on Linux
 
@@ -41,8 +41,6 @@ To compile and run the project:
 g++ -std=c++11 main.cpp -o WaveSimulation -lglfw -lGL -ldl -lX11 -pthread -lXrandr -lXi -lXxf86vm -lXinerama -lXcursor
 ./WaveSimulation
 ```
-### Run the program
-A file will be made to run without compiling wave-simulation.exe
 
 ## Controls
 - `ESC` – Exit the application
