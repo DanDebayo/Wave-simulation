@@ -29,6 +29,21 @@ cd Wave-Simulation
 ### Building the Project
 Compile the project using CMake or manually with `g++`.
 
+### Running on Linux
+
+If you are using Linux, ensure you have installed the required dependencies:
+```bash
+sudo apt-get update
+sudo apt-get install build-essential cmake libglfw3-dev libglm-dev libglew-dev libstb-dev
+```
+To compile and run the project:
+```bash
+g++ -std=c++11 main.cpp -o WaveSimulation -lglfw -lGL -ldl -lX11 -pthread -lXrandr -lXi -lXxf86vm -lXinerama -lXcursor
+./WaveSimulation
+```
+### Run the program
+A file will be made to run without compiling wave-simulation.exe
+
 ## Controls
 - `ESC` – Exit the application
 
