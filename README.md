@@ -27,7 +27,7 @@ cd Wave-Simulation
 ```
 
 ### Building the Project
-Compile the project using CMake or manually with `g++`.
+Compile the project using visula studios or manually with `g++`.
 
 ### Running on Linux
 
